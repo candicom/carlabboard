@@ -1,0 +1,10 @@
+
+https://backend.gitbooks.io/jpa/content/chapter6.html
+http://blog.woniper.net/263
+http://ojc.asia/bbs/board.php?bo_table=LecJpa&wr_id=230
+
+
+
+
+http://stackoverflow.com/questions/10436953/naming-primary-keys-id-vs-something-id-in-sql
+http://stackoverflow.com/questions/208580/naming-of-id-columns-in-database-tables
