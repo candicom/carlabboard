@@ -7,42 +7,45 @@ import java.util.List;
 
 /**
  * Created by Jack Kim on 2017-03-03.
- *
  */
-
 public interface BoardService {
 
     /**
      * findAll
-     * @return
+     *
+     * @return list list
      */
     List<Board> findAll();
 
     /**
-     * @param sort
-     * @return
+     * Find all list.
+     *
+     * @param sort the sort
+     * @return list list
      */
     List<Board> findAll(Sort sort);
 
     /**
+     * Find all list.
      *
-     * @param ids
-     * @return
+     * @param ids the ids
+     * @return list list
      */
     List<Board> findAll(Iterable<Long> ids);
 
     /**
      * Saves an entity and flushes changes instantly.
-     * @param entity
+     *
+     * @param entity the entity
      * @return the saved entity
      */
     Board saveAndFlush(Board entity);
 
+
     /**
-     * Deletes the given entities in a batch which means it will create a single {@link Query}. Assume that we will clear
-     * the {@link javax.persistence.EntityManager} after the call.
+     * Delete in batch.
      *
-     * @param entities
+     * @param entities the entities
      */
     void deleteInBatch(Iterable<Board> entities);
 
@@ -51,17 +54,19 @@ public interface BoardService {
      */
     void deleteAllInBatch();
 
+
     /**
-     * Returns a reference to the entity with the given identifier.
-     * @param id must not be {@literal null}.
-     * @return a reference to the entity with the given identifier.
-     * @see EntityManager#getReference(Class, Object)
+     * Gets one.
+     *
+     * @param id the id
+     * @return the one
      */
     Board getOne(Long id);
 
     /**
      * delete
-     * @param id
+     *
+     * @param id the id
      */
     void delete(Long id);
 }

@@ -10,13 +10,18 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 /**
  * Created by Jack Kim on 2017-03-01.
- *
  */
 @Controller
 @RequestMapping("/")
 public class HomeController {
     private final Logger logger = LoggerFactory.getLogger("HomeController");
 
+    /**
+     * Home string.
+     *
+     * @param model the model
+     * @return the string
+     */
     @RequestMapping(value = "/", method = RequestMethod.GET)
     public String home(ModelMap model) {
 

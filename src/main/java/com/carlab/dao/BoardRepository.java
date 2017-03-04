@@ -8,9 +8,7 @@ import java.util.List;
 
 /**
  * Created by Jack Kim on 2017-03-04.
- *
  */
-
 public interface BoardRepository extends JpaRepository<Board, Long> {
 
     // List<T> findAll()

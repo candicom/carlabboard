@@ -17,7 +17,6 @@ import java.util.List;
 
 /**
  * Created by Jack Kim on 2017-03-03.
- *
  */
 
 
@@ -29,12 +28,22 @@ public class ApiBoardController {
     @Autowired
     private BoardService boardService;
 
+    /**
+     * Home response entity.
+     *
+     * @return the response entity
+     */
     @RequestMapping("/")
     public ResponseEntity<String> home() {
 
         return ResponseEntity.ok("Hello Api Board");
     }
 
+    /**
+     * List response entity.
+     *
+     * @return the response entity
+     */
     @RequestMapping(value = "/list", method = RequestMethod.GET, produces = "application/json")
     public ResponseEntity<Iterable<Board>> list() {
         Iterable<Board> boards = boardService.findAll();
